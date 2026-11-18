@@ -1,0 +1,28 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "app_stories.c"
+        "app_ai_story.c"
+        "app_word_study.c"
+        "app_games_preschool.c"
+        "app_games_school.c"
+        "app_parent_hub.c"
+        "app_transfer.c"
+    INCLUDE_DIRS
+        "."
+    REQUIRES
+        bsp_board
+        nvs_flash
+        esp_timer
+        esp_wifi
+        esp_netif
+        esp_event
+        esp_http_server
+        esp_http_client
+        esp-tls
+        mbedtls
+        tcp_transport
+        json
+        esp-opus
+        lwip
+)

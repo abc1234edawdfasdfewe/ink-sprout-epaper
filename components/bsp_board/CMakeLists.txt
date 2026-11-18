@@ -1,0 +1,25 @@
+idf_component_register(
+    SRCS
+        "bsp_board.c"
+        "bsp_epd.c"
+        "bsp_gfx.c"
+        "bsp_audio.c"
+        "bsp_input.c"
+    INCLUDE_DIRS
+        "include"
+    REQUIRES
+        driver
+        esp_timer
+        fatfs
+        wear_levelling
+        sdmmc
+        esp_partition
+        nvs_flash
+        esp_codec_dev
+        esp_tinyusb
+        esp-opus
+    EMBED_FILES
+        "assets/kidfont_pack.bin"
+        "assets/hanzi_study_pack.bin"
+        "assets/story_art_pack.bin"
+)
